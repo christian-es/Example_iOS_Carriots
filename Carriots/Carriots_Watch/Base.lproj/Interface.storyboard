@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Carriots_Watch" customModuleProvider="target">
+                    <items>
+                        <imageView alignment="center" image="logoCarriots100.png" id="osU-8C-ePB"/>
+                        <separator alignment="left" id="FXG-SG-mRS">
+                            <color key="color" red="0.7725490196" green="0.74901960779999999" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label alignment="center" text="Status: OFF" id="3uF-2U-IHb">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <separator alignment="left" id="hZm-sU-FPD">
+                            <color key="color" red="0.7725490196" green="0.74901960779999999" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <button width="124" height="44" alignment="center" title="ON" id="Eeg-r5-XRv">
+                            <color key="backgroundColor" red="0.52156862749999999" green="0.65490196079999996" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="28"/>
+                            <variation key="device=watch42mm" height="56" width="146"/>
+                            <connections>
+                                <action selector="btnON" destination="AgC-eL-Hgc" id="yK1-Qd-GmE"/>
+                            </connections>
+                        </button>
+                        <group alignment="center" id="349-dR-LWx">
+                            <items>
+                                <button width="61" height="26" alignment="left" title="OFF" id="dzh-c9-lHn">
+                                    <color key="backgroundColor" red="0.80000000000000004" green="0.33725490196078434" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                    <variation key="device=watch42mm" height="38" width="71"/>
+                                    <connections>
+                                        <action selector="btnOFF" destination="AgC-eL-Hgc" id="WDW-sm-VUt"/>
+                                    </connections>
+                                </button>
+                                <button width="61" height="26" alignment="left" title="BLINK" id="LRW-O7-nGk">
+                                    <color key="backgroundColor" red="0.36078431372549019" green="0.34901960784313724" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                    <variation key="device=watch42mm" height="38" width="71"/>
+                                    <connections>
+                                        <action selector="btnBLINK" destination="AgC-eL-Hgc" id="CLU-O0-0ky"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="1" green="0.98058252430000004" blue="0.98058252430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="lblStatus" destination="3uF-2U-IHb" id="HaP-nc-3bn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Carriots_Watch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

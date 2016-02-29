@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Carriots" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXz-5y-jT2">
+                                <rect key="frame" x="35" y="219" width="150" height="150"/>
+                                <state key="normal" image="botonON.png"/>
+                                <connections>
+                                    <action selector="UIButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ku3-Uy-eTM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMQ-OP-5MK">
+                                <rect key="frame" x="185" y="329" width="100" height="100"/>
+                                <state key="normal" image="botonOFF.png"/>
+                                <connections>
+                                    <action selector="UIButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3nw-vW-wDq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGi-lL-C6e">
+                                <rect key="frame" x="115" y="399" width="50" height="50"/>
+                                <state key="normal" image="botonBLINK.png"/>
+                                <connections>
+                                    <action selector="UIButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fnK-hp-ggS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbv-Py-Flm">
+                                <rect key="frame" x="131" y="173" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current status of led:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1v-vX-ngN">
+                                <rect key="frame" x="46" y="110" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mh-mh-m3u">
+                                <rect key="frame" x="214" y="105" width="42" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Led" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAk-R9-JSm">
+                                <rect key="frame" x="86" y="49" width="45" height="38"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="27"/>
+                                <color key="textColor" red="0.55294117649999996" green="0.66666666669999997" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Control" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OV-zB-iFe">
+                                <rect key="frame" x="141" y="48" width="93" height="38"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="27"/>
+                                <color key="textColor" red="0.81960784310000001" green="0.37254901959999998" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoCarriots.png" translatesAutoresizingMaskIntoConstraints="NO" id="wRV-Il-PnY">
+                                <rect key="frame" x="84" y="489" width="152" height="48"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zbv-Py-Flm" firstAttribute="top" secondItem="K1v-vX-ngN" secondAttribute="bottom" constant="42" id="02M-zr-utc"/>
+                            <constraint firstItem="wRV-Il-PnY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3QG-kh-xgh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wRV-Il-PnY" secondAttribute="bottom" constant="31" id="76Z-WQ-oKU"/>
+                            <constraint firstItem="HGi-lL-C6e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-20" id="FU7-Vg-ciP"/>
+                            <constraint firstItem="0mh-mh-m3u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-165.5" id="H5E-Y2-MDY"/>
+                            <constraint firstItem="cAk-R9-JSm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-51.5" id="MZj-m1-osD"/>
+                            <constraint firstItem="HMQ-OP-5MK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="75" id="NRY-0j-poj"/>
+                            <constraint firstItem="pXz-5y-jT2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="10" id="NYZ-zn-v5f"/>
+                            <constraint firstItem="0OV-zB-iFe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="PC8-pA-fFa"/>
+                            <constraint firstItem="0OV-zB-iFe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="27.5" id="PGP-fs-rIg"/>
+                            <constraint firstItem="0mh-mh-m3u" firstAttribute="leading" secondItem="K1v-vX-ngN" secondAttribute="trailing" constant="6" id="QLn-KA-qtV"/>
+                            <constraint firstItem="HMQ-OP-5MK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="95" id="TkI-kv-2s4"/>
+                            <constraint firstItem="K1v-vX-ngN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-33" id="ZNz-SG-qbw"/>
+                            <constraint firstItem="Zbv-Py-Flm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aWd-06-qUW"/>
+                            <constraint firstItem="cAk-R9-JSm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="dFh-rQ-LEN"/>
+                            <constraint firstItem="pXz-5y-jT2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-50" id="hp1-Qz-W7o"/>
+                            <constraint firstItem="Zbv-Py-Flm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100.5" id="lWn-VK-jYe"/>
+                            <constraint firstItem="HGi-lL-C6e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="140" id="rfT-XC-THG"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="UILabelStatus" destination="0mh-mh-m3u" id="Ho2-pZ-Tem"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320" y="416"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="botonBLINK.png" width="50" height="50"/>
+        <image name="botonOFF.png" width="100" height="100"/>
+        <image name="botonON.png" width="150" height="150"/>
+        <image name="logoCarriots.png" width="152" height="48"/>
+    </resources>
+</document>
