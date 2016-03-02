@@ -24,6 +24,6 @@ Includes:
 ![ScreenShot](https://raw.github.com/christian-es/Example_iOS_Carriots/master/Carriots/Screenshot/3DTouch.PNG)
 
 
-* Apple Watch
+*  Watch
 ----------
 ![ScreenShot](https://raw.github.com/christian-es/Example_iOS_Carriots/master/Carriots/Screenshot/AppleWatch.png)
