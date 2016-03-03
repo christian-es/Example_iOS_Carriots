@@ -11,19 +11,40 @@ Replace the value of device and apikey from your Carriots account:
     let apikey = "YOUR APIKEY HERE"
     let device = "YOUR DEVICE's ID_DEVELOPER HERE"
 
-Includes:
---------
+Configurations at Carriots - http://www.carriots.com:
+---------------
 
-* App iOS
-----------
+<b>Device</b>
+
+![ScreenShot](https://raw.github.com/christian-es/Example_iOS_Carriots/master/Carriots/Screenshot/DeviceCarriots.png)
+
+
+<b>Listener</b>
+
+![ScreenShot](https://raw.github.com/christian-es/Example_iOS_Carriots/master/Carriots/Screenshot/ListenerCarriots.png)
+
+
+Schema for connections with Raspberry Pi
+-----------
+
+![ScreenShot](https://raw.github.com/christian-es/Example_iOS_Carriots/master/Carriots/Screenshot/EsquemaPython.png)
+
+Applications at smart device
+=======
+
+iPhone
+-------
+
+<b>App iOS</b>
+
 ![ScreenShot](https://raw.github.com/christian-es/Example_iOS_Carriots/master/Carriots/Screenshot/App.png)
 
 
-* 3D Touch
-----------
+<b>3D Touch</b>
+
 ![ScreenShot](https://raw.github.com/christian-es/Example_iOS_Carriots/master/Carriots/Screenshot/3DTouch.PNG)
 
 
-*  Watch
-----------
+ Watch
+------
 ![ScreenShot](https://raw.github.com/christian-es/Example_iOS_Carriots/master/Carriots/Screenshot/AppleWatch.png)
